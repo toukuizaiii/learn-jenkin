@@ -16,6 +16,8 @@ go run .
 Hello, World!
 ```
 
+访问 http://localhost:8080/test，返回 `Hello from the test route!`，可用于验证新分支的构建结果。
+
 按 `Ctrl+C` 停止服务。可通过 `PORT` 环境变量修改端口，例如在 PowerShell 中：
 
 ```powershell
