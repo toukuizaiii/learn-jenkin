@@ -59,6 +59,8 @@ pipeline {
                 }
             }
             steps {
+                input message: '确认部署到 Docker？', ok: '确认部署'
+
                 sh '''
                     set -eu
                     export APP_IMAGE="learn-jenkin:${GIT_COMMIT}-${BUILD_NUMBER}"
